@@ -5,11 +5,13 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
 import AirplayIcon from "@mui/icons-material/Airplay";
+import { useNavigate } from "react-router-dom";
 
 export default function Navbar() {
+    const navigate = useNavigate();
     return (
         <Box sx={{ flexGrow: 1 }}>
-            <AppBar position='static'>
+            <AppBar onClick={()=>navigate("/")} position='static'>
                 <Toolbar>
                     <IconButton
                         size='large'

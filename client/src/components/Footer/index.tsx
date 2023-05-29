@@ -20,16 +20,11 @@ export default function Footer() {
                     alignItems='center'
                 >
                     <Grid item xs={12}>
-                        <Typography color='#ffffff' variant='h5'>
-                            React Starter App
-                        </Typography>
-                    </Grid>
-                    <Grid item xs={12}>
                         <Typography
                             color='#ffffff'
                             variant='subtitle1'
                         >
-                            {`${new Date().getFullYear()} | React | Material UI | React Router`}
+                            {`© Copyright ${new Date().getFullYear()} Pawan Patidar`}
                         </Typography>
                     </Grid>
                 </Grid>
